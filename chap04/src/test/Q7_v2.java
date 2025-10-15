@@ -11,6 +11,7 @@ public class Q7_v2 {
 		int balance = 0;
 		
 		while(run) {
+
 			System.out.println("-------------------------------------------");
 			System.out.println("1. 예금 || 2. 출금 || 3. 잔고 || 4. 종료");
 			System.out.println("-------------------------------------------");
@@ -34,11 +35,11 @@ public class Q7_v2 {
 			}
 			else {
 				System.out.println("1 ~ 4까지만 입력");
-			}
+			}			
+
 		}
-		
 		System.out.println("프로그램 종료");
 		scanner.close();
 	}
-
 }
+
