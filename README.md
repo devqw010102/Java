@@ -4,4 +4,5 @@
 국비교육
 
 <h3>Todo</h3>
-1. 폴더 readme.md 추가
+1. chap 별 주제<br>
+2. chap01, chap03
