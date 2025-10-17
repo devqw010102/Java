@@ -42,15 +42,15 @@ public class Exam06 {
 			else if(selectNo == 4) {
 				int max = Integer.MIN_VALUE;
 				int sum = 0;
+				
 				for(int i : scores) {
 					sum += i;
-					if(i > max) 
-						max = i;
+					max = (i > max) ? i : max;
 				}
 				
 				double avg = (double) sum / scores.length;
 				
-				System.out.println("최구 점수 : " + max);
+				System.out.println("최고 점수 : " + max);
 				System.out.println("평균 점수 : " + avg);
 			}
 			else if(selectNo == 5) {

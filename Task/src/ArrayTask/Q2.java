@@ -9,8 +9,6 @@ public class Q2 {
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		int[] arr = new int[5];
-		
 		System.out.print("값 입력> ");
 		String str = scanner.nextLine();
 		scanner.close();
