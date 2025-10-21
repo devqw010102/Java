@@ -1,0 +1,68 @@
+1. 아래 패키지 구조 및 클래스를 분석하여 Person 클래스를 완성하세요.
+com.example.person
+│
+├─ Person.java
+└─ MainApp.java
+
+
+package com.example.person;
+
+// Person 클래스: 이름(name), 나이(age)를 갖는 객체
+public class Person {
+    // 1. 필드 (접근제한자 private)
+
+    // 2. 생성자
+
+
+    // 3. Getter 메소드 (private 필드 읽기)
+
+
+    // 4. Setter 메소드 (private 필드 값 변경)
+    // 이름이 빈 문자열일 경우 "이름없음"으로 저장
+    // 그렇지 않으면 외부에서 넘어온 값 저장
+
+    // 나이는 0 이상일 때만 변경
+
+
+
+    // 5. 정보 출력용 메소드
+}
+
+package com.example.person;
+
+public class MainApp {
+    public static void main(String[] args) {
+        // Person 객체 생성
+        Person p1 = new Person("홍길동", 25);
+
+        // 정보 출력
+        p1.printInfo();
+
+        // private 필드는 직접 접근 불가
+        // p1.name = "김철수";   // ? 오류 발생
+
+        // 대신 setter 사용
+        p1.setName("김철수");
+        p1.setAge(30);
+
+        // getter로 값 확인
+        System.out.println("변경된 이름: " + p1.getName());
+        System.out.println("변경된 나이: " + p1.getAge());
+
+        // 잘못된 값 테스트
+        p1.setName("");
+        p1.setAge(-5);
+        p1.printInfo();
+    }
+}
+
+
+2. 은행 계좌 객체인 Account 객체는 잔고(balance) 필드를 가지고 있습니다.
+balance 필드는 음수값이 될 수 없고, 최대 백만 원까지만
+저장할 수 있습니다. 외부에서 balance 필드를 마음대로 변경하지 못하도록 하고,
+0 <= balance <= 1,000,000 범위의 값만 가질 수 있도록
+Account 클래스를 작성해보세요.
+
+SetBalance와 GetBalance 메소드를 이용하세요.
+0과 1,000,000은 MIN_BALANCE와 MAX_BALANCE 상수를 선언해서 이용하세요.
+Setter의 매개값이 음수이거나 백만 원을 초과하면 현재 balance 값을 유지하세요.
