@@ -57,7 +57,7 @@ public class MainApp {
 						phone.sendVoice(scanner.nextLine());
 					}
 					else if(receive == 2) {
-						System.out.print("상대방이 하시고자 하는 메세지를 입력하세요.> 안녕하세요 저는 정자바입니다.");
+						System.out.print("상대방이 하시고자 하는 메세지를 입력하세요.> .");
 						phone.receiveVoice(scanner.nextLine());
 					}
 					else if(receive == 3) {
