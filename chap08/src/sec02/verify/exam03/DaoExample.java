@@ -1,15 +1,15 @@
 package sec02.verify.exam03;
 
-public class DAOExample {
+public class DaoExample {
 	public static void dbWork(DataAccessObject dao) {
-		dao.select();
+		dao.select();	
 		dao.insert();
 		dao.update();
 		dao.delete();
 	}
 	
 	public static void main(String[] args) {
-		dbWork(new OracleDAO());
-		dbWork(new MySqlDAO());
+		dbWork(new OracleDao());
+		dbWork(new MySqlDao());
 	}
 }
