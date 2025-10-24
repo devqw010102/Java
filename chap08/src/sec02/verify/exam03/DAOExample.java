@@ -1,4 +1,4 @@
-package sec02.verify;
+package sec02.verify.exam03;
 
 public class DAOExample {
 	public static void dbWork(DataAccessObject dao) {
