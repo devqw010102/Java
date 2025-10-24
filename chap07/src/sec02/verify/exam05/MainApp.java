@@ -7,9 +7,9 @@ public class MainApp {
 		Controller c = new Controller();
 		
 		c.setService(new MemberService());
-		c.service.login();
+		c.service.login();					// MemberSerivce.login()
 		
-		c.setService(new AService());
+		c.setService(new AService());		// AService.login()
 		c.service.login();
 	}
 
