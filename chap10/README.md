@@ -10,3 +10,23 @@
 </pre>
 
 ##### 모든 예외는 java.lang.Exception 클래스를 상속받는다.
+
+
+
+### 예외 처리    // chap10.sec02
+
+#### 예외 처리 코드
+
+<pre>
+  <code>
+    try {
+        [예외 발생 가능 코드]
+    }
+    catch(예외 클래스 e) {
+        [예외 처리]
+    }
+    finally {
+        [항상 실행]
+    }
+  </code>
+</pre>
