@@ -34,10 +34,9 @@
 ### 익명 객체    // chap09.sec02
 
 #### 익명 객체 : 클래스 이름이 없는 객체
+##### 상속
 <pre>
   <code>
-    ========== 상속 ==========
-    
     class A extends Person {
         void wake() { ... }
     }
@@ -46,17 +45,20 @@
         A a = new A();
         Person field = new Person();
     }
+  </code>
+</pre>
 
-    ========== 익명객체 ==========
-    
+##### 익명객체
+<pre>
+  <code>
     Person field = new Person() {
-        void work() { ...	}
-    
-        @Override
-        void wake() { 
-          ...
-          work();
-        }
-  	};
+      void work() { ...	}
+  
+      @Override
+      void wake() { 
+        ...
+        work();
+      }
+    };
   </code>
 </pre>
